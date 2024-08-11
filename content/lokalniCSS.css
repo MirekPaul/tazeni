@@ -1,0 +1,82 @@
+.kontejner {
+	
+	display: flex;
+	justify-content: center;
+}
+
+.obsah {
+	width: 900px;
+}
+.vypis {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.aktivniPlaneta {
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+	font-size: 3rem;
+	margin: 1rem;
+}
+
+.skryj {
+	display: none;
+}
+
+
+/*oddíl pravidla*/
+
+li {
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding-top: 2rem;
+	padding-bottom: 0.5rem;
+}
+.textPrevidel {
+	font-size: 1rem;
+	text-indent: 3rem;
+}
+
+/*oddíl planetadisp*/
+.hrac {
+	/*text-align: center;
+	font-size: 2rem;
+	font-weight: bold;*/
+	transition: all 5s linear;
+	animation-name: hracPismeno;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes hracPismeno {
+	0% {color: red}
+	33% {color: blue}
+	66% {color: green}
+	100% {color: red;}
+}
+
+.planetaBody {
+	text-align: center;
+	font-size: 2rem;
+}
+
+.vyslaniFlotily {
+	text-align: center;
+	padding: 1rem;
+	font-size: 1.5rem;
+}
+
+.errorLog {
+	color: red;
+	font-weight: bold;
+}
+
+/*oddíl eventlist*/
+.nastred {
+	text-align: center;
+}
